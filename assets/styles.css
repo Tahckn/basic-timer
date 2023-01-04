@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(27, 27, 20);
+  color: white;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+button {
+  width: 80px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.1s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button:active {
+  transition: all 0.1s ease-in-out;
+  transform: translateY(2px);
+}
+
+.reset:hover {
+  background: rgb(252, 60, 47);
+}
+
+.reset:disabled:hover {
+  background: rgb(73, 73, 67);
+}
+
+.start:hover {
+  background: rgb(77, 217, 100);
+}
+
+.start:disabled:hover {
+  background: rgb(73, 73, 67);
+}
+
+.stop:hover {
+  background: rgb(253, 150, 1);
+}
+.stop:disabled:hover {
+  background: rgb(73, 73, 67);
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+button:disabled:hover {
+  transition: none;
+  color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+button:disabled:active {
+  transition: none;
+  transform: none;
+}
